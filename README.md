@@ -1,4 +1,4 @@
-# Czy można opatentować oprogramowanie i sztuczną inteligencję w Europie?
+# Analiza zdolności patentowej oprogramowania i sztucznej inteligencji w Europie
 
 **Projekt edukacyjny z prawa patentowego**  
 **Autor:** Bartosz Ziółkowski  
@@ -7,7 +7,7 @@
 
 ## O projekcie
 
-To memorandum wyjaśnia, kiedy wynalazek wykorzystujący program komputerowy lub sztuczną inteligencję może uzyskać ochronę patentową w Europie. Omawia różnicę między charakterem technicznym a poziomem wynalazczym, podejście COMVIK oraz decyzję T 2401/22 dotyczącą SAP.
+Opracowanie wyjaśnia, kiedy wynalazek wykorzystujący program komputerowy lub sztuczną inteligencję może uzyskać ochronę patentową w Europie. Omawia różnicę między charakterem technicznym a poziomem wynalazczym, podejście COMVIK oraz decyzję T 2401/22 dotyczącą SAP.
 
 ## Najważniejsze wnioski
 
@@ -29,9 +29,9 @@ To memorandum wyjaśnia, kiedy wynalazek wykorzystujący program komputerowy lub
 
 ## Pliki
 
-- [Pełna treść memorandum z przypisami (Markdown)](memorandum.md) — dostępna bezpośrednio na GitHubie.
+- [Pełna analiza prawna z przypisami (Markdown)](analiza-prawna-ai-epo.md) — dostępna bezpośrednio na GitHubie.
 
-Wersje **PDF** i **Word** można wygenerować z pliku `memorandum.md` przez [GitHub Actions](../../actions/workflows/build-documents.yml). Po poprawnym wykonaniu zadania pojawią się w głównym katalogu repozytorium. Oryginalne, przygotowane wcześniej wersje PDF i DOCX są dostępne również w pakiecie projektu.
+Wersje **PDF** i **Word** można wygenerować z pliku `analiza-prawna-ai-epo.md` przez [GitHub Actions](../../actions/workflows/build-documents.yml). Po poprawnym wykonaniu zadania pojawią się w głównym katalogu repozytorium. 
 
 ## Źródła
 
