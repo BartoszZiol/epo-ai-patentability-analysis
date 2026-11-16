@@ -1,0 +1,38 @@
+name: Generuj dokumenty memorandum
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - memorandum.md
+      - .github/workflows/build-documents.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pobierz repozytorium
+        uses: actions/checkout@v4
+      - name: Zainstaluj narzędzia do dokumentów
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc libreoffice-writer fonts-dejavu-core
+      - name: Utwórz Word i PDF
+        run: |
+          pandoc memorandum.md --from=gfm+footnotes --to=docx --standalone -o Memorandum_patentowe_AI_EPO_rozbudowane.docx
+          mkdir -p /tmp/lo-convert
+          libreoffice -env:UserInstallation=file:///tmp/lo-convert --headless --convert-to pdf --outdir . Memorandum_patentowe_AI_EPO_rozbudowane.docx
+          test -s Memorandum_patentowe_AI_EPO_rozbudowane.docx
+          test -s Memorandum_patentowe_AI_EPO_rozbudowane.pdf
+      - name: Zapisz dokumenty w repozytorium
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Memorandum_patentowe_AI_EPO_rozbudowane.docx Memorandum_patentowe_AI_EPO_rozbudowane.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Wygeneruj PDF i Word memorandum"
+            git push
+          fi
