@@ -29,9 +29,9 @@ To memorandum wyjaśnia, kiedy wynalazek wykorzystujący program komputerowy lub
 
 ## Pliki
 
-- [Memorandum PDF](Memorandum_patentowe_AI_EPO_rozbudowane.pdf)
-- [Memorandum Word](Memorandum_patentowe_AI_EPO_rozbudowane.docx)
-- [Źródłowa treść memorandum z przypisami](memorandum.md)
+- [Pełna treść memorandum z przypisami (Markdown)](memorandum.md) — dostępna bezpośrednio na GitHubie.
+
+Wersje **PDF** i **Word** można wygenerować z pliku `memorandum.md` przez [GitHub Actions](../../actions/workflows/build-documents.yml). Po poprawnym wykonaniu zadania pojawią się w głównym katalogu repozytorium. Oryginalne, przygotowane wcześniej wersje PDF i DOCX są dostępne również w pakiecie projektu.
 
 ## Źródła
 
