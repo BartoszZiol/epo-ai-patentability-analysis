@@ -31,8 +31,6 @@ Opracowanie wyjaśnia, kiedy wynalazek wykorzystujący program komputerowy lub s
 
 - [Pełna analiza prawna z przypisami (Markdown)](analiza-prawna-ai-epo.md) — dostępna bezpośrednio na GitHubie.
 
-Wersje **PDF** i **Word** można wygenerować z pliku `analiza-prawna-ai-epo.md` przez [GitHub Actions](../../actions/workflows/build-documents.yml). Po poprawnym wykonaniu zadania pojawią się w głównym katalogu repozytorium. 
-
 ## Źródła
 
 - [Art. 52 EPC](https://www.epo.org/en/legal/epc/2020/a52.html)
